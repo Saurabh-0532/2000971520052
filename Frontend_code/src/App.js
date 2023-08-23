@@ -1,10 +1,10 @@
-// App.js
+App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
   import Trains from './components/Trains';
 import SingleTrain from './components/SingleTrain';
 import { AppBar, Toolbar, Typography, Container, Button, IconButton } from '@mui/material';
-// import TrainIcon from '@mui/icons-material/Train';
+import TrainIcon from '@mui/icons-material/Train';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <AppBar position="static" style={{ backgroundColor: '#3949ab' }}>
         <Toolbar>
           <IconButton component={Link} to="/" edge="start" color="inherit" aria-label="train-icon">
-            {/* <TrainIcon style={{ fontSize: '30px' }} /> */}
+            {<TrainIcon style={{ fontSize: '30px' }} /> }
           </IconButton>
           <Typography variant="h6" component={Link} to="/" style={{ textDecoration: 'none', color: 'white', marginLeft: '10px' }}>
             Train Indian
